@@ -1,0 +1,16 @@
+<% if @list.errors.any? %>
+    <ul>
+        <%@list.errors.full_messages.each do |msg|%>
+           <li><%= msg%></li>
+           <%end%>
+    </ul>  
+    <%end%>     
+
+
+           <%=form_for @list do |f|%>
+
+     <%=f.label :title%><br>
+     <%=f.text_field :title%><br>
+     <%=f.submit%>
+
+     <%end%>
