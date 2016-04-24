@@ -1,7 +1,8 @@
 class ListsController < ApplicationController
 	def index
-	end
-
+	 @lists = List.all
+	 end
+	 
 	def show
 	end
 
@@ -16,5 +17,5 @@ class ListsController < ApplicationController
 
 	def destroy
 	end
-	
+
 end
